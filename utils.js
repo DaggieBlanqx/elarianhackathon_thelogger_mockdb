@@ -29,15 +29,50 @@ const findByFirstname = (first_name) => {
     }
 };
 
-const findById = (id) => {};
+const findById = (id) => {
+    var user = _.find(data, { id });
+    if (user) {
+        return user;
+    } else {
+        return false;
+    }
+};
 
-const findByLastname = (last_name) => {};
+const findByLastname = (last_name) => {
+    var user = _.find(data, { last_name });
+    if (user) {
+        return user;
+    } else {
+        return false;
+    }
+};
 
-const findByEmail = (email) => {};
+const findByEmail = (email) => {
+    var user = _.find(data, { email });
+    if (user) {
+        return user;
+    } else {
+        return false;
+    }
+};
 
-const findByPhone = (phone) => {};
+const findByPhone = (phone) => {
+    var user = _.find(data, { phone });
+    if (user) {
+        return user;
+    } else {
+        return false;
+    }
+};
 
-const findByLocation = (location) => {};
+const findByLocation = (location) => {
+    var user = _.find(data, { location });
+    if (user) {
+        return user;
+    } else {
+        return false;
+    }
+};
 
 module.exports = {
     capitalizeText,
