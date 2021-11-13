@@ -33,7 +33,8 @@ router.get('/id/:id', function (req, res) {
         });
     } else {
         res.json({
-            error: 'No user like this',
+            status: 'error',
+            errorMessage: 'No user like this',
         });
     }
 });
@@ -55,7 +56,8 @@ router.get('/firstname/:firstname', function (req, res) {
         });
     } else {
         res.json({
-            error: 'No user like this',
+            status: 'error',
+            errorMessage: 'No user like this',
         });
     }
 });
@@ -76,7 +78,8 @@ router.get('/lastname/:lastname', function (req, res) {
         });
     } else {
         res.json({
-            error: 'No user like this',
+            status: 'error',
+            errorMessage: 'No user like this',
         });
     }
 });
@@ -97,7 +100,8 @@ router.get('/email/:email', function (req, res) {
         });
     } else {
         res.json({
-            error: 'No user like this',
+            status: 'error',
+            errorMessage: 'No user like this',
         });
     }
 });
@@ -118,7 +122,8 @@ router.get('/phone/:phone', function (req, res) {
         });
     } else {
         res.json({
-            error: 'No user like this',
+            status: 'error',
+            errorMessage: 'No user like this',
         });
     }
 });
